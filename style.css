@@ -1,5 +1,6 @@
 html{
     background-color:rgb(234, 232, 230);
+    position: absolute
 }
 
 .icon {
@@ -9,10 +10,13 @@ html{
     row-gap: 20px;
     margin-left: 20px;
     margin-top: 200px;
-    justify-content: center;   
+    justify-content: center;
+    flex-wrap: wrap; 
+    width: 50px;
+
 }
 .icon img{
-    width: 10%;
+    width: 50px;
     height: auto;
 }
 
@@ -20,14 +24,22 @@ header, main{
     margin: 0 120px;
     font-size: 1.125rem;
 }
+
 nav{
     text-align: center;
     padding: 25px 25px;
     font-size: 1.25rem;
 }
-nav a{
+header nav a{
     padding: 20px;
-    color:blue;
+    color:black;
+    border-radius: 8px;
+    text-decoration: none;
+
+}
+header nav a:hover{
+    background: black;
+    color: white;
 }
 
 #intro{
@@ -46,12 +58,13 @@ nav a{
     font-size: 2.5rem;
     font-family: "Lucida Console";
     font-style: italic;
-    margin-right: 160px;
+    margin-right: 120px;
 
 }
 #intro img{
-    max-width: auto;
-    max-height: 300px;  
+    width: auto;
+    height: 300px; 
+    border-radius: 10px; 
 }
 
 #about{
